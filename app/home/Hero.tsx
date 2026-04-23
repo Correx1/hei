@@ -55,8 +55,7 @@ export default function Hero() {
         <div className="relative w-full h-[450px] lg:h-[600px] overflow-hidden group">
           <Image 
             src={PROJECTS.main.image} 
-            alt={PROJECTS.main.title} 
-            fill
+            alt={PROJECTS.main.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             priority
           />
@@ -87,8 +86,7 @@ export default function Hero() {
             <div key={index} className="relative w-full h-[250px] lg:h-[298px] overflow-hidden group">
               <Image 
                 src={item.image} 
-                alt={item.title} 
-                fill
+                alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               {/* Faint Dark Overlay */}

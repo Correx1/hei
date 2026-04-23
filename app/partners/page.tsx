@@ -56,8 +56,7 @@ export default function PartnersPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/about2.jpg"
-            alt="Business Partnership Meeting" 
-            fill
+            alt="Business Partnership Meeting" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -89,8 +88,7 @@ export default function PartnersPage() {
                 <div className="w-full h-72 relative overflow-hidden bg-gray-100 flex items-center justify-center p-8">
                   <Image 
                     src={partner.image} 
-                    alt={partner.name} 
-                    fill
+                    alt={partner.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-dark/10 group-hover:bg-transparent transition-colors duration-500"></div>

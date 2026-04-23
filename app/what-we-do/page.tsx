@@ -253,8 +253,7 @@ export default function WhatWeDoPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/about3.jpg"
-            alt="Medical Intervention" 
-            fill
+            alt="Medical Intervention" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -316,7 +315,7 @@ export default function WhatWeDoPage() {
                          />
                       ) : (
                          <>
-                           <Image src={item.cases[0].videoThumb!} alt="Video" fill className="object-cover opacity-90" />
+                           <Image src={item.cases[0].videoThumb!} alt="Video" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover opacity-90" />
                            {item.cases[0].showPlay && (
                              <div className="w-14 h-10 bg-[#FF0000] rounded-xl flex items-center justify-center relative z-10 shadow-md">
                                <Play className="fill-white text-white w-5 h-5 ml-1" />
@@ -353,7 +352,7 @@ export default function WhatWeDoPage() {
                              />
                           ) : (
                              <>
-                               <Image src={caseItem.videoThumb!} alt="Video" fill className="object-cover opacity-90" />
+                               <Image src={caseItem.videoThumb!} alt="Video" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover opacity-90" />
                                {caseItem.showPlay && (
                                  <div className="w-14 h-10 bg-[#FF0000] rounded-xl flex items-center justify-center relative z-10 shadow-md">
                                    <Play className="fill-white text-white w-5 h-5 ml-1" />
@@ -390,7 +389,7 @@ export default function WhatWeDoPage() {
                     <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
                       {item.cases.map((caseItem, idx) => (
                         <div key={idx} className="w-full aspect-[4/3] relative rounded-md overflow-hidden shadow-md">
-                           <Image src={caseItem.videoThumb!} alt="Section Preview" fill className="object-cover" />
+                           <Image src={caseItem.videoThumb!} alt="Section Preview" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
                         </div>
                       ))}
                     </div>

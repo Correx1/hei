@@ -86,9 +86,8 @@ export default function GetInvolvedPage() {
       <section className="relative w-full min-h-[60vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1593113583279-7dd2efb6d915?q=80&w=2000&auto=format&fit=crop" 
-            alt="Get Involved" 
-            fill
+            src="/get-involve.jpg"
+            alt="Get Involved" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />

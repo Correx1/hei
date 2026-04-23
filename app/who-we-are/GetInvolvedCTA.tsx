@@ -34,8 +34,7 @@ export default function GetInvolvedCTA() {
       <div className="absolute inset-0 z-0">
         <Image 
           src="/volunteer.jpg"
-          alt="HEI Volunteers" 
-          fill
+          alt="HEI Volunteers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
           className="object-cover object-center"
         />
         {/* Warm slightly dark overlay to match the reference feel but cleaner */}

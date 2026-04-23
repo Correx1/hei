@@ -72,8 +72,7 @@ export default function FinancialReportsPage() {
               <div className="w-full aspect-[3/4] relative bg-gray-100 overflow-hidden">
                 <Image 
                   src={report.image} 
-                  alt={report.title} 
-                  fill 
+                  alt={report.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill 
                   className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>

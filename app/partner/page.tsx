@@ -13,8 +13,7 @@ export default function PartnerPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2000&auto=format&fit=crop" 
-            alt="Partner With Us Hero" 
-            fill
+            alt="Partner With Us Hero" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center mix-blend-overlay"
             priority
           />
@@ -215,8 +214,7 @@ export default function PartnerPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=2000&auto=format&fit=crop" 
-            alt="Hospital Check" 
-            fill
+            alt="Hospital Check" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center opacity-[0.03] pointer-events-none"
           />
         </div>

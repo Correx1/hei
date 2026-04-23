@@ -34,8 +34,7 @@ export default function Partners() {
               >
                 <Image 
                   src={logoUrl} 
-                  alt={`Partner ${idx + 1}`} 
-                  fill
+                  alt={`Partner ${idx + 1}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-contain"
                 />
               </div>

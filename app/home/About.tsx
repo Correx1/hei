@@ -132,8 +132,7 @@ export default function About() {
                   <div className="relative w-full h-[180px] sm:h-[220px] mb-4">
                     <Image 
                       src="/award.png" 
-                      alt="Best Supporting NGO Award" 
-                      fill
+                      alt="Best Supporting NGO Award" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                       className="object-contain"
                     />
                   </div>

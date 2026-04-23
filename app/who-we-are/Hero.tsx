@@ -8,8 +8,7 @@ export default function WhoWeAreHero() {
       <div className="absolute inset-0 z-0">
         <Image 
           src="/about.jpg" 
-          alt="Health Emergency Initiative Team" 
-          fill
+          alt="Health Emergency Initiative Team" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
           className="object-cover object-center"
           priority
         />

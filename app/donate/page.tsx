@@ -12,9 +12,8 @@ export default function DonatePage() {
       <section className="relative w-full min-h-[55vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=2000&auto=format&fit=crop" 
-            alt="Donation Hero Background" 
-            fill
+            src="/Another-life-was-Saved.jpg"
+            alt="Donation Hero Background" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -139,13 +138,12 @@ export default function DonatePage() {
       </section>
 
       {/* Impact Area Icons Section Top Overlay */}
-      <section className="relative w-full py-24 bg-brand-dark overflow-hidden flex flex-col items-center border-t-4 border-[#E51924]">
+      <section className="relative w-full py-24 bg-black overflow-hidden flex flex-col items-center border-t-4 border-[#E51924]">
         {/* Dynamic Dark Hero Image with Overlay mix tracking */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1542884748-2b87b36c6b90?q=80&w=2000&auto=format&fit=crop" 
-            alt="Mountains Backdrop" 
-            fill
+            src="/about.jpg" 
+            alt="Mountains Backdrop" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover opacity-20 object-center mix-blend-overlay"
           />
         </div>
@@ -159,7 +157,7 @@ export default function DonatePage() {
              
              {/* Service Column 1 */}
              <div className="flex flex-col items-center text-center group">
-               <div className="bg-white/10 p-5 rounded-full mb-6 group-hover:bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
+               <div className=" p-5 rounded-full mb-6 bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
                  <Ambulance className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={1.5}/>
                </div>
                <h4 className="text-white font-sans font-bold uppercase tracking-wide text-[14px] md:text-[15px] leading-snug">
@@ -169,7 +167,7 @@ export default function DonatePage() {
 
              {/* Service Column 2 */}
              <div className="flex flex-col items-center text-center group">
-               <div className="bg-white/10 p-5 rounded-full mb-6 group-hover:bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
+               <div className="p-5 rounded-full mb-6 bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
                  <BriefcaseMedical className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={1.5}/>
                </div>
                <h4 className="text-white font-sans font-bold uppercase tracking-wide text-[14px] md:text-[15px] leading-snug">
@@ -179,7 +177,7 @@ export default function DonatePage() {
 
              {/* Service Column 3 */}
              <div className="flex flex-col items-center text-center group">
-               <div className="bg-white/10 p-5 rounded-full mb-6 group-hover:bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
+               <div className="p-5 rounded-full mb-6 bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
                  <Stethoscope className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={1.5}/>
                </div>
                <h4 className="text-white font-sans font-bold uppercase tracking-wide text-[14px] md:text-[15px] leading-snug">
@@ -189,7 +187,7 @@ export default function DonatePage() {
 
              {/* Service Column 4 */}
              <div className="flex flex-col items-center text-center group">
-               <div className="bg-white/10 p-5 rounded-full mb-6 group-hover:bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
+               <div className="p-5 rounded-full mb-6 bg-[#E51924] transition-colors duration-400 group-hover:scale-110 shadow-lg border border-white/5">
                  <Users className="w-10 h-10 md:w-12 md:h-12 text-white" strokeWidth={1.5}/>
                </div>
                <h4 className="text-white font-sans font-bold uppercase tracking-wide text-[14px] md:text-[15px] leading-snug">
@@ -201,9 +199,7 @@ export default function DonatePage() {
         </div>
       </section>
 
-      {/* Global Action Banner */}
-      <GetInvolvedCTA />
-
+    
     </div>
   );
 }

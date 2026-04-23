@@ -11,8 +11,7 @@ export default function LFRPartnershipPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=2000&auto=format&fit=crop" 
-            alt="LFR Partnership Background" 
-            fill
+            alt="LFR Partnership Background" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -92,8 +91,7 @@ export default function LFRPartnershipPage() {
             <div className="order-2 lg:order-1 w-full h-full min-h-[300px] relative rounded-sm overflow-hidden flex justify-center items-center shadow-xl border-[2px] border-gray-100">
                 <Image 
                   src="https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Zachary Eisner LFR" 
-                  fill
+                  alt="Zachary Eisner LFR" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-cover object-center"
                 />
                <div className="absolute top-0 left-0 w-full h-1 bg-[#E51924] z-10 pointer-events-none"></div>

@@ -61,8 +61,7 @@ export default function BlogPage() {
                     <Link href={`/blogs/${post.slug}`}>
                       <Image 
                         src={post.image} 
-                        alt={post.title} 
-                        fill 
+                        alt={post.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill 
                         className="object-cover group-hover:scale-105 transition-transform duration-500" 
                       />
                     </Link>

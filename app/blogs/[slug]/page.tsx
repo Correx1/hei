@@ -59,7 +59,7 @@ export default async function BlogSinglePage({ params }: { params: Promise<{ slu
             <div className="w-full aspect-[21/9] relative rounded-sm overflow-hidden mb-10 shadow-sm">
               <Image 
                 src={post.image} 
-                alt={post.title} 
+                alt={post.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                 fill 
                 className="object-cover"
                 priority

@@ -39,8 +39,7 @@ export default function Team() {
               <div className="relative w-36 h-36 md:w-52 md:h-52 mb-6 rounded-full overflow-hidden shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] border-4 border-white group-hover:shadow-[0_12px_40px_-4px_rgba(209,10,10,0.2)] transition-all duration-300">
                 <Image 
                   src={member.image} 
-                  alt={member.name}
-                  fill
+                  alt={member.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>

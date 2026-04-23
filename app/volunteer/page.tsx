@@ -52,8 +52,7 @@ export default function VolunteerPage() {
         <div className="absolute inset-0 z-0 border-t-4 border-[#E51924]">
           <Image 
             src="https://images.unsplash.com/photo-1593113583279-7dd2efb6d915?q=80&w=2000&auto=format&fit=crop" 
-            alt="Volunteer Hero" 
-            fill
+            alt="Volunteer Hero" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -87,8 +86,7 @@ export default function VolunteerPage() {
             >
                <Image 
                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
-                 alt="Volunteer With Us Graphic Link"
-                 fill
+                 alt="Volunteer With Us Graphic Link" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                />
                <div className="absolute inset-0 bg-[#0a0a0a]/0 group-hover:bg-[#0a0a0a]/10 transition-colors duration-500"></div>
@@ -160,8 +158,7 @@ export default function VolunteerPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2000&auto=format&fit=crop" 
-            alt="Life lived for others background" 
-            fill
+            alt="Life lived for others background" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-bottom"
           />
           <div className="absolute inset-0 bg-[#0a0a0a]/60 mix-blend-multiply"></div>

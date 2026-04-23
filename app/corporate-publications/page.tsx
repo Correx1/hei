@@ -82,8 +82,7 @@ export default function CorporatePublicationsPage() {
               <div className="w-full aspect-[3/4] relative rounded-sm overflow-hidden mb-6 bg-gray-100 shadow-[0_2px_8px_-2px_rgba(0,0,0,0.1)]">
                 <Image 
                   src={item.image} 
-                  alt={item.summary} 
-                  fill
+                  alt={item.summary} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 

@@ -148,8 +148,7 @@ export default function EmergencyNumbersPage() {
       <section className="relative w-full h-[350px] md:h-[450px] flex justify-center items-center overflow-hidden">
         <Image 
           src="https://images.unsplash.com/photo-1548345680-f5475ea90f14?q=80&w=1600&auto=format&fit=crop" 
-          alt="Cityscape" 
-          fill 
+          alt="Cityscape" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill 
           className="object-cover"
           priority
         />

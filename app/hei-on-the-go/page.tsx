@@ -1,16 +1,16 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import React from "react";
 import GetInvolvedCTA from "@/app/who-we-are/GetInvolvedCTA";
 
 // Media Gallery Component Renderers accepting dynamic media props 
 // so you can easily maintain the URLs via the EVENTS object below.
-const MixedPortraitMedia = ({ media }: { media: { videoUrl: string, images: string[] } }) => (
+const MixedPortraitMedia = ({ media }: { media: { videoUrl?: string, images: string[] } }) => (
   <div className="w-full flex flex-col md:flex-row gap-4 mb-10">
     {/* Main Portrait Video */}
     <div className="w-full md:w-[40%] lg:w-[35%] aspect-[3/4] relative bg-black rounded-sm overflow-hidden shadow-md shrink-0">
       <iframe 
         className="w-full h-full absolute inset-0 border-0"
-        src={media.videoUrl} 
+        src={media.videoUrl ?? ""}
         title="HEI Video"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowFullScreen 
@@ -20,7 +20,7 @@ const MixedPortraitMedia = ({ media }: { media: { videoUrl: string, images: stri
     <div className="w-full flex-1 grid grid-cols-2 gap-4">
       {media.images.slice(0, 4).map((img, i) => (
         <div key={i} className="w-full aspect-[4/3] relative bg-gray-100 rounded-sm overflow-hidden shadow-sm hover:opacity-95 transition-opacity cursor-pointer">
-          <Image src={img} alt={`Gallery image ${i}`} fill className="object-cover" />
+          <Image src={img} alt={`Gallery image ${i}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
       ))}
     </div>
@@ -29,7 +29,7 @@ const MixedPortraitMedia = ({ media }: { media: { videoUrl: string, images: stri
 
 const WideImageMedia = ({ media }: { media: { images: string[] } }) => (
   <div className="w-full aspect-[16/9] md:aspect-[21/9] relative bg-gray-100 rounded-sm overflow-hidden shadow-md mb-10 group">
-    <Image src={media.images[0]} alt="Wide Event Cover" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+    <Image src={media.images[0]} alt="Wide Event Cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
   </div>
 );
@@ -38,7 +38,7 @@ const CarouselMedia = ({ media }: { media: { images: string[] } }) => (
   <div className="w-full flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mb-8 scrollbar-hide">
     {media.images.map((img, i) => (
       <div key={i} className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[40%] aspect-[16/10] relative bg-gray-100 rounded-sm overflow-hidden shadow-sm snap-center shrink-0">
-        <Image src={img} alt={`Carousel image ${i}`} fill className="object-cover" />
+        <Image src={img} alt={`Carousel image ${i}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
       </div>
     ))}
   </div>
@@ -48,7 +48,7 @@ const GridMedia = ({ media }: { media: { images: string[] } }) => (
   <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
     {media.images.slice(0, 4).map((img, i) => (
       <div key={i} className="w-full aspect-video relative bg-gray-100 rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <Image src={img} alt={`Grid Image ${i}`} fill className="object-cover" />
+        <Image src={img} alt={`Grid Image ${i}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
       </div>
     ))}
   </div>
@@ -261,3 +261,4 @@ export default function HEIOnTheGoPage() {
     </div>
   );
 }
+

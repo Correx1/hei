@@ -19,7 +19,7 @@ export const BLOG_POSTS = [
           We are excited to announce that our Executive Director, Paschal Achunine, will be representing Health Emergency Initiative (HEI) at the upcoming HFN Annual Conference 2026. As we reflect on a decade of providing emergency assistance to over 50,000 individuals and nearly 7,000 critically injured victims, this conference serves as a vital platform to discuss scaling impact.
         </p>
         <div className="w-full aspect-video md:aspect-[21/9] relative rounded-sm overflow-hidden my-8 shadow-sm">
-          <Image src="https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=1600&auto=format&fit=crop" alt="HFN Conference Main" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=1600&auto=format&fit=crop" alt="HFN Conference Main" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
         <h3 className="text-[20px] md:text-[24px] font-heading font-bold text-brand-dark mt-8 mb-4">Building Sustainable Healthcare Systems</h3>
         <p>
@@ -33,10 +33,10 @@ export const BLOG_POSTS = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
           <div className="w-full aspect-[4/3] relative rounded-sm overflow-hidden shadow-sm">
-            <Image src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop" alt="Panel discussion" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=800&auto=format&fit=crop" alt="Panel discussion" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover hover:scale-105 transition-transform duration-500" />
           </div>
           <div className="w-full aspect-[4/3] relative rounded-sm overflow-hidden shadow-sm">
-            <Image src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&auto=format&fit=crop" alt="Healthcare workers" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+            <Image src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&auto=format&fit=crop" alt="Healthcare workers" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover hover:scale-105 transition-transform duration-500" />
           </div>
         </div>
         <p>
@@ -66,7 +66,7 @@ export const BLOG_POSTS = [
           Every Child Deserves a Healthy Start! On Tuesday, November 25th, the Health Emergency Initiative (HEI), in collaboration with CardGoal, officially flagged off the Gift Health Nutrition Program. This initiative is a direct response to the rising cases of malnutrition, ensuring that no child is left behind due to a lack of basic nutritional needs.
         </p>
         <div className="w-full aspect-[16/9] relative rounded-sm overflow-hidden my-8 shadow-sm">
-          <Image src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" alt="Nutrition program launch" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" alt="Nutrition program launch" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
         <h3 className="text-[20px] md:text-[24px] font-heading font-bold text-brand-dark mt-8 mb-4">A Community-Driven Approach</h3>
         <p>
@@ -74,13 +74,13 @@ export const BLOG_POSTS = [
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           <div className="w-full aspect-square relative rounded-sm overflow-hidden shadow-sm">
-             <Image src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop" alt="Community 1" fill className="object-cover" />
+             <Image src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=600&auto=format&fit=crop" alt="Community 1" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
           </div>
           <div className="w-full aspect-square relative rounded-sm overflow-hidden shadow-sm">
-             <Image src="https://images.unsplash.com/photo-1518398046578-8cca57782e17?q=80&w=600&auto=format&fit=crop" alt="Community 2" fill className="object-cover" />
+             <Image src="https://images.unsplash.com/photo-1518398046578-8cca57782e17?q=80&w=600&auto=format&fit=crop" alt="Community 2" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
           </div>
           <div className="w-full aspect-square relative rounded-sm overflow-hidden shadow-sm">
-             <Image src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=600&auto=format&fit=crop" alt="Community 3" fill className="object-cover" />
+             <Image src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?q=80&w=600&auto=format&fit=crop" alt="Community 3" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
           </div>
         </div>
         <p>
@@ -109,7 +109,7 @@ export const BLOG_POSTS = [
           At the Celebration Gathering Event Center, the evening was a powerful tribute to a decade of commitment, made possible by our incredible partners, volunteers, and beneficiaries. This post is dedicated to sharing the vibrant visual story of that unforgettable night.
         </p>
         <div className="w-full aspect-[21/9] relative rounded-sm overflow-hidden my-8 shadow-sm">
-          <Image src="https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=1600&auto=format&fit=crop" alt="Gala wide view" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=1600&auto=format&fit=crop" alt="Gala wide view" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
         <h3 className="text-[20px] md:text-[24px] font-heading font-bold text-brand-dark mt-8 mb-4">Awards and Recognition</h3>
         <p>
@@ -117,10 +117,10 @@ export const BLOG_POSTS = [
         </p>
         <div className="grid grid-cols-2 gap-4 my-8">
           <div className="w-full aspect-[3/4] relative rounded-sm overflow-hidden shadow-sm">
-             <Image src="https://images.unsplash.com/photo-1561489413-985b06da5bee?q=80&w=800&auto=format&fit=crop" alt="Award winner 1" fill className="object-cover" />
+             <Image src="https://images.unsplash.com/photo-1561489413-985b06da5bee?q=80&w=800&auto=format&fit=crop" alt="Award winner 1" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
           </div>
           <div className="w-full aspect-[3/4] relative rounded-sm overflow-hidden shadow-sm">
-             <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Award winner 2" fill className="object-cover" />
+             <Image src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Award winner 2" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
           </div>
         </div>
         <p>
@@ -146,7 +146,7 @@ export const BLOG_POSTS = [
           The Health Emergency Initiative (HEI)’s 10th Anniversary Celebration was marked by high praise and strong endorsement from the Governor of Lagos State, Mr. Babajide Olusola Sanwo-Olu, who hailed the organisation as a “model for compassion-driven healthcare intervention” and a “vital partner” to the state.
         </p>
         <div className="w-full aspect-video relative rounded-sm overflow-hidden my-8 shadow-sm">
-          <Image src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1200&auto=format&fit=crop" alt="Gov Sanwo-Olu Rep" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1200&auto=format&fit=crop" alt="Gov Sanwo-Olu Rep" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
         <p>
           The Governor was represented by Dr. Mrs. Cecilia Mabogunje, Permanent Secretary, Ministry of Health, who delivered an inspiring keynote address outlining the critical nature of public-NGO partnerships in closing the massive gaps in Nigeria's healthcare infrastructure.
@@ -193,7 +193,7 @@ export const BLOG_POSTS = [
           In our continued effort to ensure that safety skills become common knowledge, HEI has expanded its First Responder training program into secondary schools across Lagos state.
         </p>
         <div className="w-full aspect-[16/9] relative rounded-sm overflow-hidden my-8 shadow-sm">
-          <Image src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Students Training" fill className="object-cover" />
+          <Image src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop" alt="Students Training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
         </div>
         <p>
           Over 500 students have recently participated in our comprehensive CPR and First Aid workshops, preparing them to respond effectively to medical emergencies in their schools and communities. We strongly believe that early education is the key to building a resilient, response-ready nation.

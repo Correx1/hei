@@ -10,7 +10,6 @@ export default function WhoWeArePage() {
       <Hero />
       <MissionVision />
       <OurStory />
-     
       <Team />
       <GetInvolvedCTA />
     </div>

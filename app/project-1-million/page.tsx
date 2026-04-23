@@ -24,8 +24,7 @@ export default function Project1MillionPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2000&auto=format&fit=crop" 
-            alt="Project 1 Million Crowd" 
-            fill
+            alt="Project 1 Million Crowd" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />

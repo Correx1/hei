@@ -108,8 +108,7 @@ export default function NewsAndMediaPage() {
               <div className="w-full aspect-[4/3] relative rounded-sm overflow-hidden mb-5 bg-gray-100 shadow-sm">
                 <Image 
                   src={item.image} 
-                  alt={item.title} 
-                  fill
+                  alt={item.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

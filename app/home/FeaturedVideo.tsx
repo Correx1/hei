@@ -52,8 +52,7 @@ export default function FeaturedVideo() {
               <div key={idx} className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg border border-white/5">
                 <Image 
                   src={img.src} 
-                  alt={img.alt} 
-                  fill
+                  alt={img.alt} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>

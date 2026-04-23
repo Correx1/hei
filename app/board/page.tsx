@@ -85,8 +85,7 @@ export default function BoardOfTrusteesPage() {
         <div className="absolute inset-0 z-0">
           <Image 
             src="/about2.jpg"
-            alt="Board Members Meeting" 
-            fill
+            alt="Board Members Meeting" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
@@ -123,8 +122,7 @@ export default function BoardOfTrusteesPage() {
                     <div className="w-full h-64 sm:w-40 sm:h-auto xl:w-48 shrink-0 relative overflow-hidden bg-gray-100">
                       <Image 
                         src={member.image} 
-                        alt={member.name} 
-                        fill
+                        alt={member.name} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>

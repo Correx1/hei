@@ -25,7 +25,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
         <div className="absolute inset-0 z-0">
           <Image 
             src={service.heroImage} 
-            alt={service.title} 
+            alt={service.title} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
             fill
             className="object-cover object-center"
             priority
@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                           ) : (
                             <Image 
                               src={section.media.url} 
-                              alt={section.heading || "Section Media Image"} 
+                              alt={section.heading || "Section Media Image"} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                               fill
                               className="object-cover hover:scale-105 transition-transform duration-700" 
                             />
@@ -160,7 +160,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                           >
                             <Image 
                               src={m.url} 
-                              alt="Gallery Image" 
+                              alt="Gallery Image" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                               fill
                               className="object-cover hover:scale-105 transition-transform duration-700" 
                             />
@@ -201,7 +201,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                     ) : (
                       <Image 
                         src={mediaItem.url} 
-                        alt={mediaItem.title || "Gallery Image"} 
+                        alt={mediaItem.title || "Gallery Image"} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-700" 
                       />

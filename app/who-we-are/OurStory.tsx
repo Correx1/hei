@@ -78,8 +78,7 @@ export default function OurStory() {
             <div className="relative h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
               <Image 
                 src="/outreach.jpg"
-                alt="Hospital Intervention"
-                fill
+                alt="Hospital Intervention" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                 className="object-cover"
               />
             </div>
@@ -96,8 +95,7 @@ export default function OurStory() {
             <div className="relative h-[350px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl lg:order-1 order-2">
               <Image 
                 src="/training.jpg"
-                alt="First Responder Training"
-                fill
+                alt="First Responder Training" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                 className="object-cover"
               />
             </div>
