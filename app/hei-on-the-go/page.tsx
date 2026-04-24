@@ -1,5 +1,4 @@
 ﻿import Image from "next/image";
-import React from "react";
 import GetInvolvedCTA from "@/app/who-we-are/GetInvolvedCTA";
 
 // Media Gallery Component Renderers accepting dynamic media props 
@@ -27,28 +26,11 @@ const MixedPortraitMedia = ({ media }: { media: { videoUrl?: string, images: str
   </div>
 );
 
-const WideImageMedia = ({ media }: { media: { images: string[] } }) => (
-  <div className="w-full aspect-[16/9] md:aspect-[21/9] relative bg-gray-100 rounded-sm overflow-hidden shadow-md mb-10 group">
-    <Image src={media.images[0]} alt="Wide Event Cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-  </div>
-);
-
 const CarouselMedia = ({ media }: { media: { images: string[] } }) => (
   <div className="w-full flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mb-8 scrollbar-hide">
     {media.images.map((img, i) => (
       <div key={i} className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[40%] aspect-[16/10] relative bg-gray-100 rounded-sm overflow-hidden shadow-sm snap-center shrink-0">
         <Image src={img} alt={`Carousel image ${i}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
-      </div>
-    ))}
-  </div>
-);
-
-const GridMedia = ({ media }: { media: { images: string[] } }) => (
-  <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-    {media.images.slice(0, 4).map((img, i) => (
-      <div key={i} className="w-full aspect-video relative bg-gray-100 rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-        <Image src={img} alt={`Grid Image ${i}`} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover" />
       </div>
     ))}
   </div>
@@ -63,12 +45,12 @@ const EVENTS = [
     title: "HEALTH EMERGENCY INITIATIVE HONOURS ROAD CRASH VICTIMS AT FEDERAL ROAD SAFTEY HEADQUARTERS IN LAGOS STATE",
     MediaRenderer: MixedPortraitMedia,
     media: {
-      videoUrl: "https://www.youtube.com/embed/C4jKDPk8ArA?rel=0",
+      videoUrl: "https://www.youtube.com/embed/rflc36h8UYQ?si=x_zGi5-q0ImyUsNO",
       images: [
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop&sig=11",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop&sig=12",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop&sig=13",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=600&auto=format&fit=crop&sig=14"
+        "/frsc-remembrance.jpeg",
+        "/frsc-remembrace2.jpeg", 
+        "/frsc-remembrace3.jpeg",
+        "/frsc-remembrace4.jpeg"
       ]
     },
     content: (
@@ -100,10 +82,9 @@ const EVENTS = [
     MediaRenderer: CarouselMedia,
     media: {
       images: [
-        "https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=800&auto=format&fit=crop&sig=51",
-        "https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=800&auto=format&fit=crop&sig=52",
-        "https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=800&auto=format&fit=crop&sig=53",
-        "https://images.unsplash.com/photo-1559863345-02eae058c2ce?q=80&w=800&auto=format&fit=crop&sig=54"
+       "/hei-us-embassy.jpeg",
+       "/hei-us-embassy2.jpeg",
+       "/hei-us-embassy3.jpeg"
       ]
     },
     content: (
@@ -131,10 +112,9 @@ const EVENTS = [
     MediaRenderer: CarouselMedia,
     media: {
       images: [
-        "https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=800&auto=format&fit=crop&sig=21",
-        "https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=800&auto=format&fit=crop&sig=22",
-        "https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=800&auto=format&fit=crop&sig=23",
-        "https://images.unsplash.com/photo-1579208575657-302a24ec758a?q=80&w=800&auto=format&fit=crop&sig=24"
+        "/veraki.jpeg",
+        "/veraki2.jpeg", 
+        "/veraki3.jpg"
       ]
     },
     content: (
@@ -159,12 +139,12 @@ const EVENTS = [
     title: "HEI FIRST RESPONDER TRAINING MOVES TO IMO STATE, IMPACTING GRASSROOTS LEVEL",
     MediaRenderer: MixedPortraitMedia,
     media: {
-      videoUrl: "https://www.youtube.com/embed/C4jKDPk8ArA?rel=0",
+      videoUrl: "https://www.youtube.com/embeds/mbnHd7Ke_SM?rel=0",
       images: [
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop&sig=31",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop&sig=32",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop&sig=33",
-        "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop&sig=34"
+        "/hei-imo.jpg",
+        "/hei-imo2.jpg",
+        "/hei-imo3.jpg",
+        "/hei-imo4.jpg"
       ]
     },
     content: (

@@ -12,7 +12,7 @@ export default function PartnerPage() {
       <section className="relative w-full min-h-[50vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2000&auto=format&fit=crop" 
+            src="/about2.jpg" 
             alt="Partner With Us Hero" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center mix-blend-overlay"
             priority

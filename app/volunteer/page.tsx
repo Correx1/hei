@@ -51,12 +51,12 @@ export default function VolunteerPage() {
       <section className="relative w-full min-h-[50vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0 border-t-4 border-[#E51924]">
           <Image 
-            src="https://images.unsplash.com/photo-1593113583279-7dd2efb6d915?q=80&w=2000&auto=format&fit=crop" 
+            src="/about2.jpg" 
             alt="Volunteer Hero" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/90"></div>
+          <div className="absolute inset-0 bg-[#0a0a0a]/80"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-8">
@@ -73,7 +73,7 @@ export default function VolunteerPage() {
       </section>
 
       {/* Why Volunteer Section Side By Side */}
-      <section className="w-full py-20 md:py-28 bg-white border-b border-gray-100">
+      <section className="w-full py-14 md:py-20 bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-stretch">
             
@@ -85,7 +85,7 @@ export default function VolunteerPage() {
               className="block w-full h-[350px] md:h-[450px] lg:h-full relative rounded-sm overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] group transition-shadow duration-500"
             >
                <Image 
-                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000&auto=format&fit=crop"
+                 src="/outreach2.jpg"
                  alt="Volunteer With Us Graphic Link" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                />
