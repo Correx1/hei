@@ -1,63 +1,63 @@
-import Image from "next/image";
-
-const GALLERY_IMAGES = [
-  {
-    src: "/medical-outreach.jpg",
-    alt: "HEI Medical Action"
-  },
-  {
-    src: "/walk.jpg",
-    alt: "HEI Community Outreach"
-  },
-  {
-    src: "/ppe-donation.jpg",
-    alt: "HEI Emergency Care"
-  },
-  {
-    src: "/training.jpg",
-    alt: "HEI training"
-  }
-];
+import Link from "next/link";
 
 export default function FeaturedVideo() {
   return (
-    <section className="w-full bg-[#f3fbfc] py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="story" className="py-[100px] bg-brand-light relative">
+      <div className="max-w-[1240px] mx-auto px-6 relative z-10">
         
-        {/* Optional Header Context */}
-        <div className="text-center space-y-4 mb-10 lg:mb-12">
-          <h2 className="text-2xl md:text-3xl font-heading font-semibold text-brand-dark uppercase tracking-tight">
-            Our Impact in Action
-          </h2>
-          <div className="w-20 h-1.5 bg-brand-red mx-auto rounded-full"></div>
-        </div>
-
-        {/* 2-Column Grid (Video | 4 Pictures) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 h-auto lg:h-[45vh] min-h-[400px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[3rem] lg:gap-[4rem] items-center">
           
-          {/* Left: Video */}
-          <div className="w-full h-[350px] lg:h-full rounded-2xl overflow-hidden shadow-xl border border-white/10 bg-black relative">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/-dNBnJGdvo0" 
-              title="Health Emergency Initiative Showcase Video" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          <div className="relative pb-[56.25%] border-[12px] border-white shadow-[0_20px_60px_rgba(0,0,0,0.15)] overflow-hidden">
+            <iframe
+              src="https://www.youtube.com/embed/s5TWe7ULZ5o?start=14"
+              title="HEI Story — Paschal Achunine"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="absolute inset-0 w-full h-full border-none"
             ></iframe>
           </div>
 
-          {/* Right: Grid of 4 Pictures */}
-          <div className="w-full h-[350px] lg:h-full grid grid-cols-2 grid-rows-2 gap-3 lg:gap-4">
-            {GALLERY_IMAGES.map((img, idx) => (
-              <div key={idx} className="relative w-full h-full rounded-2xl overflow-hidden shadow-lg border border-white/5">
-                <Image 
-                  src={img.src} 
-                  alt={img.alt} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
+          <div className="flex flex-col">
+            <span className="block font-serif italic text-[0.95rem] text-brand-gold tracking-[0.04em] mb-[0.5rem]">
+              The HEI Story
+            </span>
+            
+            <h2 className="font-head font-bold uppercase leading-[1.15] tracking-[0.02em] text-[clamp(1.7rem,3vw,2.4rem)] text-brand-dark mb-[1rem]">
+              Hear From Our<br />
+              Executive Director
+            </h2>
+            
+            <div className="flex items-center gap-[1rem] p-[1.2rem] bg-white border-l-[4px] border-brand-red my-[1.5rem]">
+              <div className="w-[52px] h-[52px] bg-brand-red rounded-full shrink-0 flex items-center justify-center font-head font-bold text-white text-[1.2rem]">
+                PA
               </div>
-            ))}
-
+              <div>
+                <strong className="block font-head uppercase text-[0.9rem] tracking-[0.05em] text-brand-dark">
+                  Paschal Achunine
+                </strong>
+                <span className="text-[0.8rem] text-brand-muted font-serif italic">
+                  Executive Director, Health Emergency Initiative
+                </span>
+              </div>
+            </div>
+            
+            <p className="text-brand-muted text-[0.97rem] mb-[1.2rem]">
+              We believe that every life is precious and should be protected at all costs. People die daily from medical conditions that require less than ₦20,000 ($30) to treat — and we refuse to accept that as inevitable.
+            </p>
+            
+            <p className="text-brand-muted text-[0.97rem] mb-[1.2rem]">
+              To date, we have partnered with <strong className="text-brand-dark">78 hospitals nationwide</strong>. With your continued support, we aim to expand to <strong className="text-brand-dark">144 hospitals</strong>, enabling us to save thousands more lives.
+            </p>
+            
+            <div className="mt-[0.5rem]">
+              <Link
+                href="#donate"
+                className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-red text-white border-brand-red hover:bg-brand-red-dark hover:border-brand-red-dark hover:shadow-[0_12px_28px_rgba(226,29,36,0.35)]"
+              >
+                Support the Mission
+              </Link>
+            </div>
+            
           </div>
 
         </div>

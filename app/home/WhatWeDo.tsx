@@ -1,79 +1,81 @@
 import Link from "next/link";
-import { ClipboardPlus, Ambulance, HeartPulse, ShieldPlus, Users } from "lucide-react";
-
-const WHAT_WE_DO = [
-  {
-    title: "Payment of hospital bills for indigent patients",
-    overview: "We believe that everyone deserves quality healthcare regardless of their financial status. Our initiative covers emergency medical bills for the poorest patients, ensuring they receive life-saving treatments.",
-    icon: ClipboardPlus,
-    href: "/hospital-bills"
-  },
-  {
-    title: "Post crash care",
-    overview: "Immediate medical response after road traffic accidents is crucial. We provide post-crash care support to victims to stabilize their condition and facilitate their recovery journey.",
-    icon: Ambulance,
-    href: "/post-crash-care"
-  },
-  {
-    title: "First respondans/cpr training scheme",
-    overview: "Empowering the public saves lives. We conduct widespread CPR and first aid training programs across communities to equip everyday citizens with vital emergency response skills.",
-    icon: HeartPulse,
-    href: "/cpr-training"
-  },
-  {
-    title: "PPE donations",
-    overview: "Protecting our frontline health workers is a priority. We actively donate Personal Protective Equipment (PPE) to underserved hospitals and clinics to ensure safe medical environments.",
-    icon: ShieldPlus,
-    href: "/ppe-donations"
-  },
-  {
-    title: "Outreach programs",
-    overview: "Going beyond the hospitals, we organized community outreach programs targeting rural and marginalized populations to raise health awareness and provide basic screenings.",
-    icon: Users,
-    href: "/outreach"
-  }
-];
+import Image from "next/image";
 
 export default function WhatWeDo() {
+  const programs = [
+    {
+      tag: "Core Program",
+      title: "Emergency Bill Coverage",
+      text: "Covering medical bills under ₦20,000 for verified indigent patients at partner hospitals.",
+      image: "/outreach3.jpg",
+      link: "#",
+    },
+    {
+      tag: "Training",
+      title: "CPR & First Aid Training",
+      text: "Building a nationwide network of trained first responders in rural and underserved communities.",
+      image: "/training2.jpg",
+      link: "#",
+    },
+    {
+      tag: "Child Health",
+      title: "Malnutrition Relief",
+      text: "Providing therapeutic food, medical aid and nutrition support to malnourished children.",
+      image: "/Another-life-was-Saved.jpg",
+      link: "#",
+    },
+  ];
+
   return (
-    <section className="w-full bg-[#fcfbf9] py-16 lg:py-24 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="programs" className="py-[90px] pb-[60px] bg-brand-white">
+      <div className="max-w-[1240px] mx-auto px-6">
         
-        {/* Section Header */}
-        <div className="text-center space-y-4 max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-heading font-semibold text-brand-dark uppercase tracking-tight">
-            What We Do
+        <div className="text-center mb-[3.5rem]">
+          <span className="block font-serif italic text-[0.95rem] text-brand-gold tracking-[0.04em] mb-[0.6rem]">
+            Our Best Programs
+          </span>
+          <h2 className="font-head font-bold uppercase leading-[1.15] tracking-[0.02em] text-[clamp(1.8rem,3vw,2.6rem)] text-brand-dark mb-[1rem]">
+            More Than Just an NGO —<br />
+            A Life-Saving Movement
           </h2>
-          <div className="w-20 h-1.5 bg-brand-red mx-auto rounded-full"></div>
-          <p className="text-[15px] sm:text-base font-sans text-brand-dark/80 leading-relaxed pt-2 font-medium">
-            Our interventions are focused on rapid response, direct support, and community empowerment to ensure that that none should die.
+          <p className="text-brand-muted max-w-[560px] mx-auto">
+            From emergency bill coverage to first-responder training, every HEI program is designed to close the gap between life and death.
           </p>
         </div>
 
-        {/* 5 Cards Centralized using flex wrap */}
-        <div className="flex flex-wrap justify-center gap-6 pt-4">
-          {WHAT_WE_DO.map((item, idx) => (
-            <Link 
-              href={item.href}
-              key={idx} 
-              className="group flex flex-col items-center text-center bg-white w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] max-w-sm rounded-xl p-8 shadow-sm hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] border border-gray-100 transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Red Circle Icon */}
-              <div className="w-16 h-16 rounded-full bg-brand-red flex items-center justify-center shadow-md mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                <item.icon className="w-8 h-8 text-white" strokeWidth={2} />
-              </div>
+      </div>
 
-              {/* Card Content */}
-              <h3 className="font-heading font-bold text-[19px] text-brand-dark leading-snug mb-3 first-letter:uppercase group-hover:text-brand-red transition-colors">
-                {item.title}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+        {programs.map((program, idx) => (
+          <Link href={program.link} key={idx} className="relative min-h-[380px] flex flex-col justify-end overflow-hidden group cursor-pointer block">
+            
+            <Image 
+              src={program.image}
+              alt={program.title}
+              fill
+              className="absolute inset-0 object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-105 brightness-[0.55] saturate-[0.8] group-hover:brightness-[0.4] group-hover:saturate-[0.7]"
+            />
+            
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,5,5,0.92)] via-transparent to-transparent"></div>
+            
+            <div className="relative z-10 p-[2rem]">
+              <span className="inline-block bg-brand-red text-white font-head text-[0.65rem] uppercase tracking-[0.15em] px-[10px] py-[3px] mb-[0.75rem]">
+                {program.tag}
+              </span>
+              <h3 className="font-head text-[1.2rem] font-semibold uppercase text-white mb-[0.5rem] leading-[1.2]">
+                {program.title}
               </h3>
-              <p className="font-sans text-sm text-gray-500 leading-relaxed line-clamp-4">
-                {item.overview}
+              <p className="text-[0.82rem] text-white/60 leading-[1.5]">
+                {program.text}
               </p>
-            </Link>
-          ))}
-        </div>
-        
+              
+              <div className="inline-flex items-center gap-[0.4rem] font-head text-[0.75rem] uppercase tracking-[0.1em] text-brand-gold mt-[0.8rem] opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                Learn More →
+              </div>
+            </div>
+
+          </Link>
+        ))}
       </div>
     </section>
   );

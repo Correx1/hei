@@ -1,20 +1,27 @@
 import type { Metadata } from "next";
-import { Poppins, Open_Sans } from "next/font/google";
+import { Oswald, Lora, Open_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingEmergencyButton from "@/components/FloatingEmergencyButton";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const lora = Lora({
+  variable: "--font-lora",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
 });
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["300", "400", "600"],
 });
 
 export const metadata: Metadata = {
@@ -33,9 +40,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${openSans.variable} ${poppins.variable} h-full antialiased`}
+      className={`${openSans.variable} ${oswald.variable} ${lora.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans text-brand-dark bg-white dark:bg-brand-dark dark:text-white">
+      <body className="min-h-full flex flex-col font-sans text-brand-charcoal bg-brand-white">
         <Navbar />
         <main className="flex-1">{children}</main>
         <FloatingEmergencyButton />

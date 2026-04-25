@@ -100,7 +100,9 @@ const EVENTS = [
          </p>
          <div className="pt-4">
            <button className="text-[13px] font-bold uppercase tracking-widest text-[#E51924] border-b-2 border-[#E51924] pb-1 hover:text-brand-dark hover:border-brand-dark transition-colors">
-             READ MORE
+             <a href="https://blacktalker.com.ng/health-emergency-initiative-announces-exciting-collaboration-with-united-states-embassy-in-nigeria/">
+              READ MORE
+             </a>
            </button>
          </div>
        </div>
