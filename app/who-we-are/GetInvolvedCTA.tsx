@@ -73,7 +73,7 @@ export default function GetInvolvedCTA() {
               
               <Link 
                 href={card.href}
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-brand-red text-white py-3.5 px-8 rounded-sm font-sans font-bold text-[13px] uppercase tracking-widest hover:bg-black transition-colors duration-300"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-brand-red text-white py-3.5 px-8 rounded-sm font-sans font-bold text-[13px] uppercase tracking-widest hover:bg-brand-red-dark transition-colors duration-300"
               >
                 {card.buttonText}
               </Link>

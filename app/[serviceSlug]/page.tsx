@@ -21,7 +21,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
       
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src={service.heroImage} 
@@ -30,14 +30,14 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/70"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white uppercase tracking-tight leading-tight mb-4">
             {service.title}
           </h1>
-          <div className="w-24 h-1.5 bg-brand-red rounded-full mb-6 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-brand-gold rounded-full mx-auto mb-6"></div>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import GetInvolvedCTA from "@/app/who-we-are/GetInvolvedCTA";
 import Link from "next/link";
@@ -115,15 +116,16 @@ export default function FAQPage() {
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
 
       {/* Hero Header */}
-      <section className="relative w-full py-16 md:py-24 bg-brand-dark flex flex-col justify-center items-center text-center overflow-hidden">
-         {/* Subtle background pattern/overlay */}
-         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent pointer-events-none"></div>
-         
+      <section className="relative w-full min-h-[70vh] py-20 lg:py-28 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+        <div className="absolute inset-0 z-0">
+          <Image src="/about2.jpg" alt="FAQ Hero" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill className="object-cover object-center" priority />
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
+        </div>
          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white uppercase tracking-tight leading-tight mb-6">
               FREQUENTLY ASKED QUESTIONS
             </h1>
-            <div className="w-20 h-1.5 bg-[#E51924] rounded-full mb-6"></div>
+            <div className="w-20 h-1.5 bg-brand-gold rounded-full mb-6"></div>
             <p className="text-[16px] md:text-[18px] text-white/90 leading-relaxed font-sans font-medium max-w-2xl">
               Find answers to the most common questions regarding our mission, operations, training programs, and how you can get involved.
             </p>

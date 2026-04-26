@@ -83,7 +83,7 @@ export default function GetInvolvedPage() {
     <div className="w-full flex flex-col min-h-screen bg-white">
       
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/get-involve.jpg"
@@ -91,14 +91,14 @@ export default function GetInvolvedPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/85"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-8">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white uppercase tracking-tight leading-tight mb-4 text-center">
             WE NEED YOU!
           </h1>
-          <div className="w-24 h-1.5 bg-[#E51924] rounded-full mb-6 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-brand-gold rounded-full mb-6 mx-auto"></div>
           <p className="text-[15px] md:text-[17px] text-white/95 leading-relaxed font-sans font-medium tracking-wide max-w-3xl mx-auto px-4 text-center">
             No one can do everything, but everyone can do something. Be a part of something bigger than yourself.
           </p>

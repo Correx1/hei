@@ -9,7 +9,7 @@ export default function PartnerPage() {
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/about2.jpg" 
@@ -17,14 +17,14 @@ export default function PartnerPage() {
             className="object-cover object-center mix-blend-overlay"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/80"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-8">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white uppercase tracking-wider leading-tight mb-5 text-center">
             PARTNER WITH US
           </h1>
-          <div className="w-24 h-1.5 bg-[#E51924] rounded-full mb-6 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-brand-gold rounded-full mb-6 mx-auto"></div>
           <p className="text-[14.5px] md:text-[16px] text-white/95 leading-relaxed font-sans font-medium tracking-wide max-w-3xl mx-auto px-4 text-center mb-8">
             HEI is willing to partner and collaborate with Individuals, Groups, and Institutions under a strong ethical framework that would bring succor to indigent communities across the Globe.
           </p>

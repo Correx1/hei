@@ -153,10 +153,10 @@ export default function EmergencyNumbersPage() {
           priority
         />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         
         {/* Centered Content Box */}
-        <div className="relative z-10 bg-black/60 backdrop-blur-sm border border-white/20 p-8 md:p-12 max-w-3xl mx-4 text-center rounded-sm">
+        <div className="relative z-10 bg-[#1a0505]/85 backdrop-blur-sm border border-white/20 p-8 md:p-12 max-w-3xl mx-4 text-center rounded-sm">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-extrabold text-white uppercase tracking-wider mb-4">
             EMERGENCY NUMBERS
           </h1>

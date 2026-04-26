@@ -48,7 +48,7 @@ export default function VolunteerPage() {
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
 
       {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0 border-t-4 border-[#E51924]">
           <Image 
             src="/about2.jpg" 
@@ -56,7 +56,7 @@ export default function VolunteerPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/80"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-8">
@@ -89,7 +89,7 @@ export default function VolunteerPage() {
                  alt="Volunteer With Us Graphic Link" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                />
-               <div className="absolute inset-0 bg-[#0a0a0a]/0 group-hover:bg-[#0a0a0a]/10 transition-colors duration-500"></div>
+               <div className="absolute inset-0 bg-[#1a0505]/85 group-hover:bg-[#1a0505]/85 transition-colors duration-500"></div>
             </Link>
 
             {/* Right: Text Blocks and Needs */}
@@ -161,11 +161,11 @@ export default function VolunteerPage() {
             alt="Life lived for others background" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill
             className="object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/60 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85 mix-blend-multiply"></div>
         </div>
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-4 flex justify-center items-center">
-          <div className="border-l-4 border-[#E51924] pl-6 md:pl-10 lg:pl-12 py-3 bg-black/20 backdrop-blur-sm rounded-r-xl">
+          <div className="border-l-4 border-[#E51924] pl-6 md:pl-10 lg:pl-12 py-3 bg-[#1a0505]/85 backdrop-blur-sm rounded-r-xl">
             <h2 className="text-2xl md:text-xl lg:text-2xl italic text-white font-sans tracking-widest leading-relaxed font-bold drop-shadow-lg uppercase shadow-black/50">
               ONLY A LIFE LIVED FOR OTHERS IS WORTH LIVING!
             </h2>

@@ -43,7 +43,7 @@ export default function EmergencyStrip() {
 
         <div className="">
           <Link
-            href="#"
+            href="/emergency-numbers"
             className="inline-flex items-center gap-[0.5rem] bg-white/10 border border-white/30 text-white font-head text-[0.85rem] uppercase tracking-[0.1em] px-[20px] py-[8px] transition-colors hover:bg-white/25"
           >
             See All Emergency Numbers →

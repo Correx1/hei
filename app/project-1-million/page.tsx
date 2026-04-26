@@ -20,7 +20,7 @@ export default function Project1MillionPage() {
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
 
       {/* High-Impact Hero Section */}
-      <section className="relative w-full min-h-[60vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/outreach2.jpg" 
@@ -28,14 +28,14 @@ export default function Project1MillionPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/85"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center mt-8">
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-heading font-extrabold text-white uppercase tracking-tight leading-tight mb-6 text-center drop-shadow-md">
             PROJECT 1 MILLION
           </h1>
-          <div className="w-24 h-1.5 bg-[#E51924] rounded-full mb-8 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-brand-gold rounded-full mb-8 mx-auto"></div>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] text-white/95 leading-relaxed font-sans font-medium max-w-4xl mx-auto text-center drop-shadow-sm">
             Our goal is to raise one million Nigerians who will make a monthly commitment of at least ₦500 to vulnerable people's medical care.
           </p>

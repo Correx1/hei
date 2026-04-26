@@ -52,7 +52,7 @@ export default function PartnersPage() {
     <div className="w-full flex flex-col min-h-screen bg-[#fcfbf9]">
       
       {/* Hero Section */}
-      <section className="relative w-full min-h-[60vh] py-20 lg:py-28 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
+      <section className="relative w-full min-h-[70vh] py-20 lg:py-28 overflow-hidden bg-brand-dark flex flex-col justify-center items-center text-center">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/about2.jpg"
@@ -60,14 +60,14 @@ export default function PartnersPage() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-[#0a0a0a]/85"></div>
+          <div className="absolute inset-0 bg-[#1a0505]/85"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white uppercase tracking-tight leading-tight mb-4 text-center">
             Our Partners
           </h1>
-          <div className="w-24 h-1.5 bg-brand-red rounded-full mb-6 mx-auto"></div>
+          <div className="w-24 h-1.5 bg-brand-gold rounded-full mb-6 mx-auto"></div>
           <p className="text-[15px] md:text-[16.5px] text-white/95 leading-relaxed font-sans max-w-3xl mx-auto px-4 text-center">
             Collaboration is at the heart of saving lives. We work with visionary organizations, corporate sponsors, and government bodies to amplify our impact across Nigeria.
           </p>

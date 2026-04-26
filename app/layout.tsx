@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Oswald, Lora, Open_Sans } from "next/font/google";
+import { Oswald, Lora, Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingEmergencyButton from "@/components/FloatingEmergencyButton";
@@ -18,10 +18,10 @@ const lora = Lora({
   style: ["normal", "italic"],
 });
 
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${openSans.variable} ${oswald.variable} ${lora.variable} h-full antialiased scroll-smooth`}
+      className={`${poppins.variable} ${oswald.variable} ${lora.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col font-sans text-brand-charcoal bg-brand-white">
         <Navbar />

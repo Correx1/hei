@@ -44,11 +44,20 @@ const NAV_LINKS = [
       { title: "HEI on the Go", href: "/hei-on-the-go" },
       { title: "Blogs", href: "/blogs" },
       { title: "News and Media", href: "/news-and-media" },
-      { title: "Reports", href: "/reports" },
+      { title: "Financial Reports", href: "/financial-reports" },
+      { title: "Corporate Publications", href: "/corporate-publications" },
+      { title: "Gallery", href: "https://www.flickr.com/photos/192692543@N02/" },
+      { title: "Video", href: "https://www.youtube.com/@healthemergencyinitiative3267/videos" },
+      { title: "Testimonials", href: "/testimonials" },
+    ],
+  },
+  {
+    title: "Contact Us",
+    href: "/contact",
+    submenus: [
       { title: "FAQ", href: "/faq" },
     ],
   },
-  { title: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -147,7 +156,7 @@ export default function Navbar() {
                 href="/donate"
                 className="inline-block font-head text-[0.65rem] xl:text-[0.75rem] font-bold tracking-[0.08em] uppercase px-[12px] xl:px-[18px] py-[8px] border-[1.5px] transition-all duration-250 bg-brand-gold text-brand-dark border-brand-gold hover:bg-brand-gold-dark hover:border-brand-gold-dark hover:shadow-[0_8px_20px_rgba(255,165,0,0.3)] whitespace-nowrap"
               >
-                DONATE
+                DONATE NOW
               </Link>
             </div>
 

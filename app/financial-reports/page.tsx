@@ -32,7 +32,7 @@ export default function FinancialReportsPage() {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white uppercase tracking-tight leading-tight mb-6">
               AUDITED FINANCIAL REPORTS
             </h1>
-            <div className="w-20 h-1.5 bg-[#E51924] rounded-full mb-6"></div>
+            <div className="w-20 h-1.5 bg-brand-gold rounded-full mb-6"></div>
             <p className="text-[16px] md:text-[18px] text-white/90 leading-relaxed font-sans font-medium max-w-2xl">
               Review our annual audited financial statements, a testament to our steadfast commitment to absolute transparency and accountability.
             </p>
