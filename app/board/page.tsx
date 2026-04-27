@@ -16,7 +16,7 @@ export default function BoardOfTrusteesPage() {
       id: 1,
       name: "DR. EMMANUEL OGBEIDE IMAFIDON",
       role: "CHAIRMAN BOARD OF TRUSTEES",
-      image: "/board/Emmanuel-imafidon.jpg",
+      image: "/board/Emmanuel-Imafidon.jpg",
       bio: "Dr. Emmanuel Ogbeide Imafidon brings decades of experience in governance and public health policy. He is dedicated to overseeing the strategic direction of HEI, ensuring transparency, accountability, and the continuous expansion of our life-saving programs across Nigeria."
     },
     {
@@ -44,7 +44,7 @@ export default function BoardOfTrusteesPage() {
       id: 5,
       name: "MRS. FRANCA OKOLO",
       role: "MEMBER BOT",
-      image: "/board/Mrs-okolo.jpg",
+      image: "/board/Mrs-Okolo.jpg",
       bio: "Mrs. Franca Okolo brings strong advocacy and social outreach experience to the Board. She champions community inclusion initiatives, focusing specifically on maternal and child emergency health frameworks."
     },
     {

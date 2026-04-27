@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import GetInvolvedCTA from "@/app/who-we-are/GetInvolvedCTA";
 import { HeartHandshake, Globe, Network, Stethoscope, BadgePercent, Share2, ClipboardList, Banknote, Coins, Heart } from "lucide-react";
+import { PARTNERS } from "./partners-data";
 
 export default function PartnerPage() {
   return (
@@ -68,7 +69,7 @@ export default function PartnerPage() {
                          REACH
                      </h3>
                      <p className="text-[14px] md:text-[14.5px] text-gray-600 font-sans leading-relaxed">
-                         We go far and wide into the most remote place where others can't go or are not willing to go in order to reach the most disadvantaged.
+                         We go far and wide into the most remote place where others can&apos;t go or are not willing to go in order to reach the most disadvantaged.
                      </p>
                  </div>
 
@@ -205,6 +206,50 @@ export default function PartnerPage() {
 
              </div>
          </div>
+      </section>
+
+      {/* Our Partners Grid */}
+      <section className="w-full py-20 md:py-28 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-[11px] uppercase tracking-widest font-bold text-brand-red mb-2 font-sans">Trusted By</p>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-brand-dark uppercase tracking-tight">Our Partners</h2>
+            <div className="w-16 h-1 bg-brand-gold rounded-full mx-auto mt-4"></div>
+            <p className="text-[15px] text-gray-500 font-sans mt-5 max-w-2xl mx-auto">
+              We are proud to work alongside these incredible organisations who share our vision of saving lives and building healthier communities.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {PARTNERS.map((p) => (
+              <div key={p.id} className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden group">
+                <div className="h-0.5 w-full bg-brand-red shrink-0"></div>
+                <div className="flex flex-col items-center text-center p-7 gap-4 flex-1">
+                  <div className="h-16 flex items-center justify-center">
+                    <Image
+                      src={p.logo}
+                      alt={p.name}
+                      width={160}
+                      height={56}
+                      className="object-contain max-h-14"
+                      unoptimized
+                    />
+                  </div>
+                  <h3 className="font-heading font-bold text-brand-dark uppercase tracking-wide text-[13px] leading-snug">{p.name}</h3>
+                  <p className="font-sans text-[13px] text-gray-500 leading-relaxed flex-1">{p.description}</p>
+                  <Link
+                    href={p.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-bold uppercase tracking-widest text-brand-red border-b border-brand-red/30 hover:border-brand-red pb-0.5 transition-colors font-sans"
+                  >
+                    Visit Website →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Form Section */}
