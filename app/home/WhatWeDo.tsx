@@ -8,21 +8,21 @@ export default function WhatWeDo() {
       title: "Emergency Bill Coverage",
       text: "Covering medical bills under ₦20,000 for verified indigent patients at partner hospitals.",
       image: "/outreach3.jpg",
-      link: "#",
+      link: "/hospital-bills",
     },
     {
       tag: "Training",
       title: "CPR & First Aid Training",
       text: "Building a nationwide network of trained first responders in rural and underserved communities.",
       image: "/training2.jpg",
-      link: "#",
+      link: "/cpr-training",
     },
     {
       tag: "Child Health",
       title: "Malnutrition Relief",
       text: "Providing therapeutic food, medical aid and nutrition support to malnourished children.",
       image: "/Another-life-was-Saved.jpg",
-      link: "#",
+      link: "/outreach",
     },
   ];
 

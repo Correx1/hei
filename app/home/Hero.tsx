@@ -72,7 +72,7 @@ export default function Hero() {
               Donate to Save a Life
             </Link>
             <Link
-              href="#story"
+              href="/testimonials"
               className="inline-block text-center font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-transparent text-white border-white hover:bg-white hover:text-brand-dark w-full sm:w-auto"
             >
               Watch Our Story

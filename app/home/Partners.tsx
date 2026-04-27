@@ -27,7 +27,7 @@ export default function Partners() {
             
             <div className="mt-[0.5rem]">
               <Link
-                href="#"
+                href="/who-we-are"
                 className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-red text-white border-brand-red hover:bg-brand-red-dark hover:border-brand-red-dark hover:shadow-[0_12px_28px_rgba(226,29,36,0.35)]"
               >
                 View More Info

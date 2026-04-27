@@ -104,9 +104,7 @@ export default function Navbar() {
                   height={55}
                   className="h-[45px] lg:h-[55px] w-auto object-contain transition-transform group-hover:scale-105" 
                 />
-                <span className="block font-serif italic text-[0.75rem] lg:text-[0.8rem] text-brand-gold whitespace-nowrap">
-                  That None Should Die
-                </span>
+              
               </Link>
             </div>
 

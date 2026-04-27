@@ -18,7 +18,7 @@ export default function Footer() {
             Help Us Save Lives Today
           </h2>
           <p className="font-sans text-white/90 text-sm md:text-[15px] max-w-2xl leading-relaxed font-medium">
-            Your generous donation ensures that indigent patients receive emergency medical care without delay. Partner with us to guarantee <span className="italic font-bold">"That none should die."</span>
+            Your generous donation ensures that indigent patients receive emergency medical care without delay. Partner with us to guarantee <span className="italic font-bold">That none should die.</span>
           </p>
         </div>
         <Link
@@ -42,7 +42,6 @@ export default function Footer() {
               height={60}
               className="object-contain"
             />
-            <p className="font-sans italic font-semibold text-brand-gold text-[13px] tracking-wide -mt-2">&ldquo;That none should die.&rdquo;</p>
             <p className="font-sans text-white/60 text-[14.5px] leading-relaxed max-w-sm">
               We are a community dedicated to providing emergency healthcare to the poorest segments of society. We financially commit to covering medical bills for critical patients.
             </p>

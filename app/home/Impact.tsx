@@ -46,11 +46,11 @@ export default function Impact() {
         
         <div className="text-center mb-[3.5rem] relative">
           <span className="block text-center mb-[0.5rem] font-serif italic text-[0.95rem] text-brand-gold tracking-[0.04em]">
-            With You, There's No Limit
+            With You, There&apos;s No Limit
           </span>
           <h2 className="font-head font-bold uppercase leading-[1.15] tracking-[0.02em] text-[clamp(1.8rem,3vw,2.8rem)] text-white max-w-[640px] mx-auto mb-[1rem]">
             Our Impact — Lives<br />
-            Changed, Lives Saved
+            Changed, Lives Saved 
           </h2>
           <p className="text-white/50 max-w-[560px] mx-auto text-[0.95rem]">
             Thanks to your contribution, support and sponsorship, we have achieved these milestones and touched more lives than ever before.
@@ -78,22 +78,26 @@ export default function Impact() {
           ))}
         </div>
 
-        <div className="text-center mt-[3rem] flex flex-wrap gap-4 justify-center">
-          <Link
-            href="#donate"
-            className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-red text-white border-brand-red hover:bg-brand-red-dark hover:border-brand-red-dark hover:shadow-[0_12px_28px_rgba(226,29,36,0.35)]"
-          >
-            Make a Donation
+        <div className="text-center mt-[3rem] flex flex-wrap gap-4  justify-center">
+             <Link
+                href="/donate"
+                className="text-center font-head text-[0.85rem] md:text-[0.9rem] font-semibold tracking-[0.08em] uppercase px-7 py-3 md:px-8 md:py-3.5 border-[2px] transition-all duration-250 bg-brand-red text-white border-brand-red hover:bg-brand-red-dark hover:border-brand-red-dark hover:shadow-[0_12px_28px_rgba(226,29,36,0.35)]"
+              >
+                Make a Donation
+              </Link>
+              <Link
+                href="/volunteer"
+                className="text-center font-head text-[0.85rem] md:text-[0.9rem] font-semibold tracking-[0.08em] uppercase px-7 py-3 md:px-8 md:py-3.5 border-[2px] transition-all duration-250 bg-brand-gold text-brand-dark border-brand-gold hover:bg-brand-gold-dark hover:border-brand-gold-dark hover:shadow-[0_12px_28px_rgba(255,165,0,0.4)]"
+              >
+                Become a Member
           </Link>
-          <Link
-            href="#donate"
-            className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-gold text-brand-dark border-brand-gold hover:bg-brand-gold-dark hover:border-brand-gold-dark hover:shadow-[0_12px_28px_rgba(255,165,0,0.4)]"
-          >
-            Become a Member
-          </Link>
-        </div>
+          </div>
 
       </div>
     </section>
   );
 }
+
+
+ 
+        

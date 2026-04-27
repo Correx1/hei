@@ -24,7 +24,7 @@ export default function DonatePromo() {
             Every naira you give goes directly to covering emergency medical bills for the poorest patients.
           </p>
           <Link
-            href="#donate"
+            href="/donate"
             className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-transparent text-white border-white hover:bg-white hover:text-brand-dark"
           >
             Donate Now
@@ -51,7 +51,7 @@ export default function DonatePromo() {
             Subscribe monthly and join a community determined to ensure no Nigerian dies from a preventable emergency.
           </p>
           <Link
-            href="#donate"
+            href="/partner"
             className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-gold text-brand-dark border-brand-gold hover:bg-brand-gold-dark hover:border-brand-gold-dark hover:shadow-[0_12px_28px_rgba(255,165,0,0.4)]"
           >
             Subscribe Now

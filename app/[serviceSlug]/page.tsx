@@ -42,7 +42,6 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
       </section>
 
       {/* Main Content Rendered Dynamically from Content Blocks */}
-      {/* Main Content Rendered Dynamically from Content Blocks */}
       {(service.sections && service.sections.length > 0) && (
         <div className="w-full flex flex-col space-y-16 lg:space-y-24 py-16 lg:py-24 overflow-hidden">
             
@@ -51,7 +50,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                 return (
                   <section key={idx} className="w-full bg-[#E51924] py-16 lg:py-20 px-4 sm:px-6 shadow-inner mx-0 relative">
                     <div className="max-w-4xl mx-auto text-center text-white/95 relative z-10 flex flex-col items-center">
-                      <div className="text-[#a41818]/40 text-7xl md:text-9xl font-serif absolute -top-10 md:-top-16 left-0 md:-left-8 select-none">"</div>
+                      <div className="text-[#a41818]/40 text-7xl md:text-9xl font-serif absolute -top-10 md:-top-16 left-0 md:-left-8 select-none">&quot;</div>
                       {section.paragraphs.map((p, pIdx) => (
                         <p 
                           key={pIdx} 
@@ -59,7 +58,7 @@ export default async function ServicePage({ params }: { params: Promise<{ servic
                           dangerouslySetInnerHTML={{ __html: p }} 
                         />
                       ))}
-                      <div className="text-[#a41818]/40 text-7xl md:text-9xl font-serif absolute -bottom-20 md:-bottom-24 right-0 md:-right-8 select-none">"</div>
+                      <div className="text-[#a41818]/40 text-7xl md:text-9xl font-serif absolute -bottom-20 md:-bottom-24 right-0 md:-right-8 select-none">&quot;</div>
                       
                       {section.buttonText && section.buttonUrl && (
                         <Link 

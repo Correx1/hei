@@ -186,7 +186,7 @@ export default function GetInvolvedPage() {
               </h3>
               
               <blockquote className="text-center md:text-left text-[14px] md:text-[15px] leading-loose font-sans italic text-white/95 font-medium">
-                "Everyone deserves better. I believe that none should die either in accidents or from other avoidable health emergencies. I stand With HEI! I am a Life Saver! Are you?"
+                &ldquo;Everyone deserves better. I believe that none should die either in accidents or from other avoidable health emergencies. I stand With HEI! I am a Life Saver! Are you?&rdquo;
               </blockquote>
             </div>
 

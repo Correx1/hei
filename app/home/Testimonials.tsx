@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Testimonials() {
   const testimonials = [
     {
@@ -36,7 +38,7 @@ export default function Testimonials() {
             Voices That Matter
           </h2>
           <p className="text-white/50 max-w-[520px] mx-auto text-[0.95rem]">
-            Real stories from the communities and partners who have experienced HEI's work firsthand.
+            Real stories from the communities and partners who have experienced HEI&apos;s work firsthand.
           </p>
         </div>
 
@@ -72,6 +74,14 @@ export default function Testimonials() {
               
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link
+            href="/testimonials"
+            className="inline-block font-head font-bold text-[0.85rem] uppercase tracking-widest px-8 py-3.5 border-2 border-white text-white hover:bg-white hover:text-brand-dark transition-all duration-300"
+          >
+            View All Testimonials
+          </Link>
         </div>
 
       </div>
