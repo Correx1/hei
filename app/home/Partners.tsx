@@ -1,8 +1,17 @@
+"use client";
 import Link from "next/link";
+import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
+import { PARTNERS } from "../partner/partners-data";
 
 export default function Partners() {
+  const [emblaRef] = useEmblaCarousel({ loop: true, dragFree: true }, [
+    AutoScroll({ playOnInit: true, stopOnInteraction: false, speed: 1.5 })
+  ]);
+
   return (
-    <section className="py-[80px] bg-brand-white border-t-[4px] border-brand-red">
+    <section className="py-[80px] bg-brand-white border-t-[4px] border-brand-red overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-6">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[3rem] lg:gap-[4rem] items-center">
@@ -27,7 +36,7 @@ export default function Partners() {
             
             <div className="mt-[0.5rem]">
               <Link
-                href="/who-we-are"
+                href="/partners"
                 className="inline-block font-head text-[1rem] font-semibold tracking-[0.08em] uppercase px-[38px] py-[14px] border-[2px] transition-all duration-250 bg-brand-red text-white border-brand-red hover:bg-brand-red-dark hover:border-brand-red-dark hover:shadow-[0_12px_28px_rgba(226,29,36,0.35)]"
               >
                 View More Info
@@ -81,6 +90,24 @@ export default function Partners() {
 
           </div>
 
+        </div>
+
+        {/* Partners Embla Carousel */}
+        <div className="mt-20 pt-12 border-t border-gray-200 overflow-hidden" ref={emblaRef}>
+          <div className="flex touch-pan-y">
+            {PARTNERS.map((partner, index) => (
+              <div className="flex-[0_0_auto] min-w-0 mx-8 flex items-center justify-center" key={index}>
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={160}
+                  height={80}
+                  className="object-contain   transition-all duration-300 max-h-14 w-auto"
+                  unoptimized
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

@@ -37,7 +37,7 @@ export default function Project1MillionPage() {
           </h1>
           <div className="w-24 h-1.5 bg-brand-gold rounded-full mb-8 mx-auto"></div>
           <p className="text-[16px] md:text-[18px] lg:text-[20px] text-white/95 leading-relaxed font-sans font-medium max-w-4xl mx-auto text-center drop-shadow-sm">
-            Our goal is to raise one million Nigerians who will make a monthly commitment of at least ₦500 to vulnerable people's medical care.
+            Our goal is to raise one million Nigerians who will make a monthly commitment of at least ₦500 to vulnerable people&apos;s medical care.
           </p>
         </div>
       </section>

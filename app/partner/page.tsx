@@ -225,15 +225,17 @@ export default function PartnerPage() {
               <div key={p.id} className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden group">
                 <div className="h-0.5 w-full bg-brand-red shrink-0"></div>
                 <div className="flex flex-col items-center text-center p-7 gap-4 flex-1">
-                  <div className="h-16 flex items-center justify-center">
-                    <Image
-                      src={p.logo}
-                      alt={p.name}
-                      width={160}
-                      height={56}
-                      className="object-contain max-h-14"
-                      unoptimized
-                    />
+                  <div className="h-40 w-full flex items-center justify-center p-2">
+                    <div className="relative w-full h-full max-w-[280px]">
+                      <Image
+                        src={p.logo}
+                        alt={p.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-contain"
+                        unoptimized
+                      />
+                    </div>
                   </div>
                   <h3 className="font-heading font-bold text-brand-dark uppercase tracking-wide text-[13px] leading-snug">{p.name}</h3>
                   <p className="font-sans text-[13px] text-gray-500 leading-relaxed flex-1">{p.description}</p>
