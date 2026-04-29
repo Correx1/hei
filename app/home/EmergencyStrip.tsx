@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Ambulance, LifeBuoy, Map } from "lucide-react";
 
 export default function EmergencyStrip() {
   return (
@@ -6,8 +7,8 @@ export default function EmergencyStrip() {
       <div className="max-w-[1240px] mx-auto px-6 relative z-10 flex flex-wrap items-center justify-center gap-5 md:gap-12">
         
         <div className="flex items-center gap-[0.8rem] text-white font-head tracking-[0.05em]">
-          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center text-[1.1rem]">
-            🚑
+          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center">
+            <Ambulance size={18} strokeWidth={2.5} />
           </div>
           <div>
             <span className="text-[0.7rem] opacity-75 block tracking-[0.1em] uppercase">Lagos Emergency</span>
@@ -18,8 +19,8 @@ export default function EmergencyStrip() {
         <div className="hidden md:block w-[1px] h-[36px] bg-white/25"></div>
 
         <div className="flex items-center gap-[0.8rem] text-white font-head tracking-[0.05em]">
-          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center text-[1.1rem]">
-            🆘
+          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center">
+            <LifeBuoy size={18} strokeWidth={2.5} />
           </div>
           <div>
             <span className="text-[0.7rem] opacity-75 block tracking-[0.1em] uppercase">Other States</span>
@@ -30,8 +31,8 @@ export default function EmergencyStrip() {
         <div className="hidden md:block w-[1px] h-[36px] bg-white/25"></div>
 
         <div className="flex items-center gap-[0.8rem] text-white font-head tracking-[0.05em]">
-          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center text-[1.1rem]">
-            🛣️
+          <div className="w-[36px] h-[36px] bg-white/15 rounded-full flex items-center justify-center">
+            <Map size={18} strokeWidth={2.5} />
           </div>
           <div>
             <span className="text-[0.7rem] opacity-75 block tracking-[0.1em] uppercase">FRSC National</span>

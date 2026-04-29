@@ -4,6 +4,7 @@ import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import { PARTNERS } from "../partner/partners-data";
+import { Hospital, Thermometer, Microscope } from "lucide-react";
 
 export default function Partners() {
   const [emblaRef] = useEmblaCarousel({ loop: true, dragFree: true }, [
@@ -47,8 +48,8 @@ export default function Partners() {
           <div className="flex flex-col gap-[1rem]">
             
             <div className="flex items-start gap-[1rem] p-[1.2rem] bg-brand-light border-l-[3px] border-brand-gold transition-colors duration-200 hover:border-brand-red">
-              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center text-[1.1rem] shrink-0">
-                🏥
+              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center shrink-0">
+                <Hospital size={20} strokeWidth={2.5} />
               </div>
               <div>
                 <h5 className="font-head text-[0.95rem] uppercase tracking-[0.04em] text-brand-dark mb-[0.2rem] font-semibold">
@@ -61,8 +62,8 @@ export default function Partners() {
             </div>
 
             <div className="flex items-start gap-[1rem] p-[1.2rem] bg-brand-light border-l-[3px] border-brand-gold transition-colors duration-200 hover:border-brand-red">
-              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center text-[1.1rem] shrink-0">
-                🌡️
+              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center shrink-0">
+                <Thermometer size={20} strokeWidth={2.5} />
               </div>
               <div>
                 <h5 className="font-head text-[0.95rem] uppercase tracking-[0.04em] text-brand-dark mb-[0.2rem] font-semibold">
@@ -75,8 +76,8 @@ export default function Partners() {
             </div>
 
             <div className="flex items-start gap-[1rem] p-[1.2rem] bg-brand-light border-l-[3px] border-brand-gold transition-colors duration-200 hover:border-brand-red">
-              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center text-[1.1rem] shrink-0">
-                🔬
+              <div className="w-[40px] h-[40px] bg-brand-red text-white flex items-center justify-center shrink-0">
+                <Microscope size={20} strokeWidth={2.5} />
               </div>
               <div>
                 <h5 className="font-head text-[0.95rem] uppercase tracking-[0.04em] text-brand-dark mb-[0.2rem] font-semibold">
